@@ -1,0 +1,20 @@
+[package]
+name = "keccak-derive"
+version = "0.1.0"
+authors = ["David Forstenlechner <dfo@lab10.coop>"]
+edition = "2018"
+keywords = ["wasm", "parity", "webassembly", "blockchain", "abi"]
+categories = ["no-std", "embedded"]
+
+[profile.release]
+panic = "abort"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "0.15.12", features = ["full", "extra-traits"] }
+quote = "0.6.8"
+proc-macro2 = "0.4"
+tiny-keccak = { version = "1.4.2", default-features = false }
+fixed-hash = { version = "0.3.0", default-features = false }
