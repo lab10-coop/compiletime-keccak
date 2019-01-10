@@ -6,9 +6,6 @@ edition = "2018"
 keywords = ["wasm", "parity", "webassembly", "blockchain", "abi"]
 categories = ["no-std", "embedded"]
 
-[profile.release]
-panic = "abort"
-
 [lib]
 proc-macro = true
 
