@@ -14,7 +14,7 @@ pub fn compiletime_keccak(item: TokenStream) -> TokenStream {
     }).collect();
 
     let result = quote! {
-        fn #name() -> H256 { H256::from([ #(#hash_values),* ]) }
+        pub fn #name() -> H256 { H256::from([ #(#hash_values),* ]) }
     };
     result.into()
 }
