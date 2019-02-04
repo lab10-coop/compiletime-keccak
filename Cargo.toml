@@ -1,5 +1,5 @@
 [package]
-name = "keccak-derive"
+name = "compiletime-keccak"
 version = "0.1.0"
 authors = ["David Forstenlechner <dfo@lab10.coop>"]
 edition = "2018"
